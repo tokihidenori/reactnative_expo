@@ -12,7 +12,7 @@
 1. gitリポジトリをcloneします
 
     ```
-    git clone https://github.com/tokihidenori/reactnative_expo.git && rm -rf reactnative_expo2/.git
+    git clone https://github.com/tokihidenori/reactnative_expo.git && rm -rf reactnative_expo/.git
     ```
 
     ※あらかじめ.gitフォルダは削除しています。
