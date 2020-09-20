@@ -1,4 +1,4 @@
-# reactnative_expo React Native+Expo@Docker
+# reactnative_expo React Native+Expo On Docker
 
 # Requirement
 
@@ -12,7 +12,7 @@
 1. gitリポジトリをcloneします
 
     ```
-    git clone https://github.com/tokihidenori/reactnative_expo.git && rm -rf reactnative_expo/.git
+    git clone https://github.com/tokihidenori/reactnative_expo_on_docker.git && rm -rf reactnative_expo_on_docker/.git
     ```
 
     ※あらかじめ.gitフォルダは削除しています。
