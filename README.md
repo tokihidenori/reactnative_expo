@@ -20,45 +20,43 @@
 
 1. Dockerコンテナをビルドします
 
-```
-docker-compose build
-```
+    ```
+    docker-compose build
+    ```
 
 1. Dockerコンテナへ接続します
 
-```
-docker-compose run --rm react_native bash --logi
-```
+    ```
+    docker-compose run --rm react_native bash --logi
+    ```
 
 1. expoプロジェクトを作成します
 
-```
-expo init .
-```
+    ```
+    expo init .
+    ```
 
 1. プロジェクトテンプレートを選択するとプロジェクトのセットアップが開始されます
 
-```
-? Choose a template: (Use arrow keys)
-  ----- Managed workflow -----
-  blank                 a minimal app as clean as an empty canvas
-❯ blank (TypeScript)    same as blank but with TypeScript configuration
-  tabs                  several example screens and tabs using react-navigation
-  ----- Bare workflow -----
-  minimal               bare and minimal, just the essentials to get you started
-  minimal (TypeScript)  same as minimal but with TypeScript configuration
-```
+    ```
+    ? Choose a template: (Use arrow keys)
+    ----- Managed workflow -----
+    blank                 a minimal app as clean as an empty canvas
+    ❯ blank (TypeScript)    same as blank but with TypeScript configuration
+    tabs                  several example screens and tabs using react-navigation
+    ----- Bare workflow -----
+    minimal               bare and minimal, just the essentials to get you started
+    minimal (TypeScript)  same as minimal but with TypeScript configuration
+    ```
 
 1. セットアップが完了したらコンテナから抜けます
 
-```
-exit
-```
+    ```
+    exit
+    ```
 
 1. Dockerコンテナを起動します
 
-```
-docker-compose up
-```
-
-1. 
+    ```
+    docker-compose up
+    ```
