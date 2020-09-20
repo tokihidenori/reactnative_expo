@@ -1,22 +1,36 @@
-# reactnative_expo# React Native+Expo@Docker
+# reactnative_expo React Native+Expo@Docker
 
 # Requirement
 
 - Mac OS Catalina Ver.10.15.6
 - docker version 19.03.12, build 48a66213fe
 - docker-compose version 1.26.2, build eefe0d31
+- Expo clientがセットアップされた検証端末(iPhone or Android)
 
 # Installation
 
-1. .envファイルを更新します
+1. gitリポジトリをcloneします
 
-    検証用端末のIPなど設定する必要があります。
+    ```
+    git clone https://github.com/tokihidenori/reactnative_expo.git && rm -rf reactnative_expo2/.git
+    ```
+
+    ※あらかじめ.gitフォルダは削除しています。
+
+1. .envファイルを追加します
+
+    検証用端末のIPなどを記載します。
 
     - ADB_IP
         検証端末のIPアドレスを指定してください。カンマ区切りで複数指定可能なようです
 
     - REACT_NATIVE_PACKAGER_HOSTNAME
         Dockerコンテナ可動端末のIPアドレス
+
+    ```yaml:sample
+    ADB_IP=192.168.50.3,192.168.50.4
+    REACT_NATIVE_PACKAGER_HOSTNAME=192.168.50.2
+    ```
 
 1. Dockerコンテナをビルドします
 
@@ -49,7 +63,7 @@
     minimal (TypeScript)  same as minimal but with TypeScript configuration
     ```
 
-1. セットアップが完了したらコンテナから抜けます
+1. セットアップが完了したらコンテナからExitします
 
     ```
     exit
@@ -60,3 +74,5 @@
     ```
     docker-compose up
     ```
+
+1. 表示されたQRコードを検証端末で読み込みするとExpo Client上にアプリ画面が表示されます。
