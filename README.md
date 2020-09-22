@@ -41,7 +41,7 @@
 1. Dockerコンテナへ接続します
 
     ```
-    docker-compose run --rm react_native bash --logi
+    docker-compose run --rm react_native bash --login
     ```
 
 1. expoプロジェクトを作成します
